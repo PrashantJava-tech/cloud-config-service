@@ -1,0 +1,14 @@
+server:
+  port: 3332
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: CLOUD-CONFIG-SERVICE
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PrashantJava-tech/config-server-source-repo.git
+          clone-on-start: true
